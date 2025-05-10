@@ -44,10 +44,10 @@ function explodeButton() {
 function loadGallery() {
   const gallery = document.querySelector(".gallery");
   const nextButton = document.querySelector(".screen-3 .btn-next");
-  
+
   // Limpa a galeria
   gallery.innerHTML = "";
-  
+
   // Array com os nomes das imagens
   const imagens = [
     "WhatsApp Image 2025-05-08 at 13.36.05 (1).jpeg",
@@ -64,7 +64,7 @@ function loadGallery() {
     "WhatsApp Image 2025-05-08 at 13.34.06 (2).jpeg",
     "WhatsApp Image 2025-05-08 at 13.34.06 (1).jpeg",
     "WhatsApp Image 2025-05-08 at 13.34.06.jpeg",
-    "WhatsApp Image 2025-05-08 at 13.34.05.jpeg"
+    "WhatsApp Image 2025-05-08 at 13.34.05.jpeg",
   ];
 
   // Adiciona cada imagem à galeria
@@ -81,7 +81,7 @@ function loadGallery() {
   screen3.addEventListener("scroll", () => {
     const scrollPosition = screen3.scrollTop + screen3.clientHeight;
     const scrollHeight = screen3.scrollHeight;
-    
+
     // Mostra o botão quando o usuário chegar próximo ao final
     if (scrollPosition >= scrollHeight - 100) {
       nextButton.classList.add("visible");
@@ -140,18 +140,18 @@ function restartApp() {
 
 // Função para controlar a carta de amor
 function toggleLetter() {
-  const envelope = document.querySelector('.envelope');
-  const loveLetter = document.querySelector('.love-letter');
-  
+  const envelope = document.querySelector(".envelope");
+  const loveLetter = document.querySelector(".love-letter");
+
   if (envelope && loveLetter) {
-    envelope.classList.toggle('open');
-    loveLetter.classList.toggle('open');
-    
+    envelope.classList.toggle("open");
+    loveLetter.classList.toggle("open");
+
     // Adiciona um efeito de brilho quando a carta é aberta
-    if (envelope.classList.contains('open')) {
-      loveLetter.style.boxShadow = '0 0 30px rgba(255, 107, 107, 0.5)';
+    if (envelope.classList.contains("open")) {
+      loveLetter.style.boxShadow = "0 0 30px rgba(255, 107, 107, 0.5)";
     } else {
-      loveLetter.style.boxShadow = 'none';
+      loveLetter.style.boxShadow = "none";
     }
   }
 }
@@ -162,13 +162,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function openLetter() {
-  const letterScreen = document.querySelector('.letter-screen');
-  letterScreen.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  const letterScreen = document.querySelector(".letter-screen");
+  letterScreen.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
 function closeLetter() {
-  const letterScreen = document.querySelector('.letter-screen');
-  letterScreen.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  const letterScreen = document.querySelector(".letter-screen");
+  letterScreen.classList.remove("active");
+  document.body.style.overflow = "auto";
 }
