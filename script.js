@@ -70,7 +70,7 @@ function loadGallery() {
   // Adiciona cada imagem à galeria
   imagens.forEach((imagem, index) => {
     const img = document.createElement("img");
-    img.src = `imagens/${imagem}`;
+    img.src = `/${imagem}`;
     img.alt = `Momento especial ${index + 1}`;
     img.loading = "lazy";
     gallery.appendChild(img);
