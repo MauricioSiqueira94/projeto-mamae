@@ -1,0 +1,23 @@
+Projeto mamãe, será feito com HTML, estilizado com css e interativo com JavaScript 
+Terá 4 telas todas as telas terão o mesmo fundo com gradiente com vermelho e roxo e corações 
+
+A primeira tela - estrutura:
+Texto grande (título): Oi Mamãe
+Texto pequeno: Venho por este meio mostrar o quão grande e maravilhosa você é como esposa e como mãe. Mas como isso é o seu presente do dia das mães, então terá essa pequena surpresa para você.
+Botão: Start!!!
+Ação do botão: transição para a próxima tela com animação deslizando para cima.
+
+Segunda Tela — Estrutura:
+Texto grande: Antes de mais nada.
+Texto pequeno: Tenho essas vários boques de flores pra você. Você aceita?
+Botões:
+Botão 1: ACEITAR → Leva à terceira tela com transição para cima.
+Botão 2: NÃO ACEITAR → O botão “explode” visualmente (efeito animado).
+
+Terceira Tela — Estrutura
+Sem título grande.
+Texto pequeno: Você é tão maravilhosa que você me trouxe a felicidade de um homem fazendo não somente a esposa, mas uma mãe e uma grande família.Me dando três pequenas felicidades, que é a Nicole, o Nicholas e o nosso pequeno Ravi.
+Imagens: 6 imagens, exibidas uma por vez com efeito visual (como fade in, slide, zoom etc.).
+Efeitos: as imagens surgem em sequência com animações 
+
+Tela 4 - estrutura:
