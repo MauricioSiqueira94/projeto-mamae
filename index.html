@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamãe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Tela 1 -->
+    <div class="screen screen-1 active">
+      <h1>Oi vida, eu te amo!</h1>
+      <p>Venho por este meio mostrar o quão grande e maravilhosa você é como esposa e como mãe. Mas como isso é o seu presente do dia das mães, então terá essa pequena surpresa para você.</p>
+      <button class="btn-next" onclick="nextScreen(1)">Continuar</button>
+    </div>
+
+    <!-- Tela 2 -->
+    <div class="screen screen-2">
+      <h1>Antes de mais nada.</h1>
+      <p>Tenho várias flores pra você. Você aceita? <br> <br>🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</p>
+      <h2>Você aceita?</h2>
+      <div class="button-group">
+        <button class="btn-next" onclick="nextScreen(2)">Sim!</button>
+        <button class="btn-explode" onclick="explodeButton()">Não</button>
+      </div>
+    </div>
+
+    <!-- Tela 3 -->
+    <div class="screen screen-3">
+      <div class="gallery">
+        <!-- As imagens serão adicionadas via JavaScript -->
+      </div>
+      <p>Nossos melhores momentos juntos e teremos muito mais.</p>
+      <button class="btn-next" onclick="nextScreen(3)">Continuar</button>
+    </div>
+
+    <!-- Tela 4 -->
+    <div class="screen screen-4">
+      <h1>Feliz Dia das Mães!</h1>
+      <p>Que seu dia seja tão maravilhoso quanto você é para mim. <br> Abra está carta que fiz para você meu amor.</p>
+      <div class="hearts-container"></div>
+      <div class="love-letter" onclick="openLetter()">
+        <div class="envelope">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <button class="btn-restart" onclick="restartApp()">
+        <span>❤️</span>
+        <span>↩️</span>
+      </button>
+    </div>
+
+    <!-- Nova tela da carta -->
+    <div class="letter-screen">
+      <button class="close-letter" onclick="closeLetter()">×</button>
+      <div class="letter-container">
+        <div class="letter-content">
+          <p>Minha amada esposa e mãe dos meus <br>filhos!!!</p>
+          <p>Neste Dia das Mães, quero expressar toda a minha gratidão e amor por você. Você é a pessoa mais especial da minha vida, minha inspiração diária e meu porto seguro.</p>
+          <p>Cada momento ao seu lado é um presente precioso. Sua força, seu carinho e sua dedicação fazem da nossa família um lugar cheio de amor e alegria.</p>
+          <p>Você é uma mãe incrível, uma esposa maravilhosa e uma pessoa extraordinária. Obrigado por ser exatamente quem você é.</p>
+          <p>Te amo mais do que as palavras podem expressar!</p>
+          <p class="signature">Com todo meu amor e carinho, <br> Te amo muito meu amor ❤️</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
